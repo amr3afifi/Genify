@@ -2,18 +2,18 @@
 # GENIFY RESTAPI
 
 ## Files Structure
-*Directories:
+*Directories: <br />
  -datasets : contians training,testing,model_results CSVs
 
-*Files:
- -app.py : Main Flask file
- -docker-compose.yml : docker files to prepare env and build image and run container
- -requirements.txt : txt file with libraries needed to prepare env
- -api-tests.rest : API testing examples
- -Dockerfile : docker files to prepare env and build image and run container
- -generate_model.py : python file to train and export the model into a pickle file
- -model.pkl : the exported model
- -playground.ipynb : jupyter notebook to train data and test my own machine learing model
+*Files: <br />
+ -app.py : Main Flask file <br />
+ -docker-compose.yml : docker files to prepare env and build image and run container <br />
+ -requirements.txt : txt file with libraries needed to prepare env <br />
+ -api-tests.rest : API testing examples <br />
+ -Dockerfile : docker files to prepare env and build image and run container <br />
+ -generate_model.py : python file to train and export the model into a pickle file <br />
+ -model.pkl : the exported model <br />
+ -playground.ipynb : jupyter notebook to train data and test my own machine learing model <br />
 
 ## Overview
 Build a REST API around a machine learning model that recommends banking products. It is based on a solution to a Kaggle competition [1]: the model is already engineered for you (notebook [3]), you just need to run the training script to obtain the trained model, and then your work focuses on building from scratch an API that serves this model. Some bonus tasks to further test your API design and devops skills are also included.
@@ -21,11 +21,11 @@ Build a REST API around a machine learning model that recommends banking product
 ## Context on the problem
 What this model solves relates to a sub-product of Genify. It helps banks recommend the right banking product (loan, deposit, credit card, etc.) to the right client at the right time. How these recommendations are delivered is equally important. Here, to do so, we opt for a REST API, and your task is to build it!
 
-## HOW TO RUN?
-docker compose up
+#### HOW TO RUN?
+$ docker compose up <br />
 (Now you are container is built and running local on port 5000 by default as initiated in docker)
 
-## HOW TO TEST THE APIs?
+#### HOW TO TEST THE APIs?
 You can find a file called api-rest.rest filled with some requests' examples that you can click on send request to try
 
 ## References
