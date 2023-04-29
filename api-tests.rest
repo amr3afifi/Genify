@@ -1,0 +1,60 @@
+POST http://localhost:5000/classification-error
+
+{
+    "title": "Villa Super2 Lux Lo2ta"
+}
+###
+
+GET http://localhost:5000/products
+###
+
+GET http://localhost:5000/recommend/15889
+###
+
+GET http://localhost:5000/recommend/133
+###
+
+POST http://localhost:5000/predict
+
+{
+    "age": 26,
+    "seniority": 214,
+    "segment": "INDIVIDUAL",
+    "gender" : "MALE",
+    "relationship_type": "ACTIVE",
+    "income": 10000,
+    "nationality": "RUSSIAN",
+    "activity_level": "ACTIVE",
+    "region": "MOSCOW"
+
+}
+###
+
+
+POST http://localhost:5000/predict
+
+{
+    "age": 26,
+    "seniority": 214,
+    "segment": "INDIVIDUAL",
+    "gender" : "FEMALE",
+    "relationship_type": "ACTIVE",
+    "income": 10000,
+    "nationality": "RUSSIAN",
+    "region": "MOSCOW"
+}
+###
+
+POST http://localhost:5000/predict
+
+{
+    "seniority": 214,
+    "segment": "INDIVIDUAL",
+    "gender" : "MALE",
+    "relationship_type": "ACTIVE",
+    "income": 10000,
+    "nationality": "RUSSIAN",
+    "region": "MOSCOW"
+}
+###
+
